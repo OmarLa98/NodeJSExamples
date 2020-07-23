@@ -5,7 +5,7 @@
 var axios = require("axios");
 
 axios.get("http://api.openweathermap.org/data/2.5/weather?q=Monterrey,MxL&appid=aea208a58f22c7fe32632fe1c466f147&units=metric")
-     .then(function(response){
+    .then(function(response) {
 
-        console.log(response.data.weather[0].description);
-     })
+        console.log(response.data.main.temp);
+    })

@@ -1,15 +1,15 @@
 // Node package for reading and writing files
-var fs  = require("fs");
+var fs = require("fs");
 
 //2
 
-fs.writeFile("movies.txt","Inception,Die Hard",function(err){
+fs.writeFile("movies.txt", "Inception,Die Hard, La La Land", function(err) {
 
-// If ther were any errors
-if (err){
-   return console.log(err); 
-}
+    // If ther were any errors
+    if (err) {
+        return console.log(err);
+    }
 
-console.log("file updated");
+    console.log("file updated");
 
 });
